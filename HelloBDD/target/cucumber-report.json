@@ -1,0 +1,96 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Login with Valid Credentials",
+        "description": "",
+        "id": "testing-login-functionality;login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 4,
+            "name": "User is on login page",
+            "keyword": "Given "
+          },
+          {
+            "line": 5,
+            "name": "User enters username",
+            "keyword": "When "
+          },
+          {
+            "line": 6,
+            "name": "User enters password",
+            "keyword": "And "
+          },
+          {
+            "line": 7,
+            "name": "User click on signin button",
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45515,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User logged in successfully",
+            "match": {
+              "location": "Steps.User_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Login with InValid Credentials",
+        "description": "",
+        "id": "testing-login-functionality;login-with-invalid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 12,
+            "name": "User is on login page",
+            "keyword": "Given "
+          },
+          {
+            "line": 13,
+            "name": "User enters username \"hello\"",
+            "keyword": "When "
+          },
+          {
+            "line": 14,
+            "name": "User enters password  \"abcd\"",
+            "keyword": "And "
+          },
+          {
+            "line": 15,
+            "name": "User click on signin button",
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57563,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should not logged in successfully",
+            "match": {
+              "location": "Steps.User_should_not_logged_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Testing Login Functionality",
+    "description": "",
+    "id": "testing-login-functionality",
+    "keyword": "Feature",
+    "uri": "testcases\\Login.feature"
+  }
+]
